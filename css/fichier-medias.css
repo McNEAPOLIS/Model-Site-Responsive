@@ -1,0 +1,215 @@
+/*Feuille de style médias queries*/
+
+/******MEDIA QUERIE MIN WIDTH 768PX*/
+
+@media screen and (min-width: 768px){
+
+	/*images*/
+
+	img{
+		width: 100%;
+	}
+
+	.big-title{
+		position: absolute;
+		left: 28%;
+		bottom: 48%;
+    }
+
+	/*styliser le menu de la page*/
+
+	.menu-items{
+		margin: 0;
+	}
+
+	.main-menu li{
+		list-style: none;
+		display: inline-block;
+		margin-left: 20px;
+		line-height: 45px;
+	}
+
+	.main-menu li a{
+		text-decoration: none;
+		font-size: 1.4em;
+		color: #fff;
+	}
+
+	/*conteneur de la grille responsive*/
+
+	.container{
+		width: 100%;
+		margin: 0 auto;
+		display: flex; 
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	/*grille responsive*/
+
+	.md-col-6:nth-child(1){width: calc(((100% / 12) * 12) - 20px);}
+    .md-col-6{width: calc(((100% / 12) * 6) - 20px);}
+    .container .col-aside{width: calc(((100% / 12) * 6) - 20px);}
+    .md-col-4, .md-col-3{width: calc(((100% / 12) * 4) - 20px);}
+
+    .has-gutter{
+    	margin: 10px;
+    }
+	
+	/*formulaire*/
+
+    .form > div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row nowrap;
+    }
+
+    #nom, #phone, #email, #textarea{
+		width: 43.8vw;
+		height: 35px;
+		border: 1px solid grey;
+		border-radius: 4px 4px;
+    }
+
+    .title{
+		font-size: 24px;
+		font-weight: bold;
+		margin-left: 16px;
+    }
+
+    #envoi-btn{
+		padding: 8px 50px;
+	}
+
+    #reset-btn{
+		padding: 8px 57px;
+	}
+
+	#envoi-btn:hover, #reset-btn:hover{
+		background-image: linear-gradient(#666, #444);
+	}
+
+	/*footer*/
+
+	.container-checkbox > .p-container {
+		display: block;
+		float: left;
+		width: 50%;
+    }
+    
+}
+
+/*****MEDIA QUERIES MIN WIDTH 992PX*/
+
+@media screen and (min-width: 992px){
+
+	img{
+		width: 100%;
+	}
+
+	 /*le menu de la page*/
+
+    header{
+    	position: relative;
+    	height: 680px;
+    }
+
+    .big-title{
+		position: absolute;
+		left: 5%;
+		bottom: 50%;
+    }
+
+    /*styliser le menu de la page*/
+
+	.main-menu li{
+		list-style: none;
+		display: inline-block;
+		margin-left: 20px;
+		line-height: 45px;
+	}
+
+	.main-menu li a{
+		text-decoration: none;
+		font-size: 1.3em;
+		color: #fff;
+	}
+
+	/*Conteneur de la grille responsive*/
+
+	.container{
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	/*Corps de la page : grille responsive*/
+
+	.xl-col-6:nth-child(1){width: calc(((100% / 12) * 6) - 20px);}
+	.xl-col-6{width: calc(((100% / 12) * 6) - 20px);}
+
+	/*col-aside-point de rupture*/
+	.container .col-aside{width: calc(((100% / 12) * 4) - 20px);}
+	.xl-col-4{width: calc(((100% / 12) * 4) - 20px);}
+
+	.xl-col-3{width: calc(((100% / 12) * 3) - 20px);}
+
+	.has-gutter{
+		margin: 10px;
+	}
+
+	/*formulaire*/
+
+	.form > div{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: row nowrap;
+    }
+
+    #formulaire{
+    	width: 100%;
+    }
+
+    #nom, #phone, #email, #textarea{
+		width: 427px;
+		height: 35px;
+		border: 1px solid grey;
+		border-radius: 4px 4px;
+		margin: 5px;
+    }
+
+    .title{
+		font-size: 24px;
+		font-weight: bold;
+		margin-left: 2px;
+    }
+
+    #envoi-btn{
+		padding: 8px 60px;
+	}
+
+   #reset-btn{
+		padding: 8px 67px;
+	}
+
+	#envoi-btn:hover, #reset-btn:hover{
+		background-image: linear-gradient(#666, #444);
+	}
+
+	/*footer*/
+
+	.container-checkbox > .p-container {
+		display: block;
+		float: left;
+		width: 33.33%;
+    }
+
+    .p-container{
+    	margin: -2px;
+    }
+}
+

@@ -1,0 +1,347 @@
+/*FEUILLE DE STYLES PAGE WEB RESPONSIVE*/
+
+/*=======================
+        RESET
+========================*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*=======================
+        BODY 
+========================*/
+
+@font-face{
+	font-family: 'Ubuntu';
+	src: url('../fonts/Ubuntu-Regular.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 100%;
+}
+
+/*=======================
+        GENERALITES
+========================*/
+
+h2{
+	font-size: 18px;
+	color: #000;
+	margin: 20px 0px;
+}
+
+p{
+	font-size: 16px;
+	color: black;
+	margin-bottom: 20px;
+}
+
+span a{
+	font-size: 1em;
+	text-decoration: none;
+	color: #549ff3;
+}
+
+span a:hover{
+	color: #f00;
+	background-color: #fff;
+}
+
+/*==========================
+        MOBILE FIRST
+===========================*/
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+img{
+	width: 100%;
+}
+
+/*===========================
+        HEADER
+============================*/
+
+header{
+	background-image: url('../images/bkg.jpg');
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	height: 600px;
+	margin-bottom: 20px;
+}
+
+/*BIG TITLE*/
+
+.big-title{
+	position: absolute;
+	left: 20%;
+	bottom: 40%;
+}
+
+/*==========================
+       MENU DE LA PAGE
+*===========================/
+
+/*
+conteneur du menu
+*/
+
+.main-menu{
+	background-color: hsl(163, 27.7%, 32%);
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+
+/*
+styliser les hamburger du menu
+*/
+
+.ham{
+	position: absolute;
+	background-image: url('../images/burg.png');
+	background-position: 0 -59px;
+	top: 38px;
+	right: 30px;
+	height: 29.5px;
+	width: 31px;
+}
+
+.ham-2{
+	position: absolute;
+	background-image: url('../images/burg.png');
+	background-position: 0 -29.5px;
+	top: 25px;
+	right: 30px;
+	height: 29.5px;
+	width: 31px;
+}
+
+/*
+styliser les éléments du menu
+*/
+
+.menu-items{
+	margin: 120px 0px 120px;
+}
+
+.main-menu li{
+	list-style: none;
+	padding: 20px;
+}
+
+.main-menu li a{
+	text-decoration: none;
+	font-size: 2.8em;
+	color: #fff;
+}
+
+.main-menu li a:hover{
+	color: #f44336;
+}
+
+/*
+boutons apparaiton disparaition menu
+*/
+
+.bouton-1, .bouton-2{
+	font-size: 1.4em;
+	position: absolute;
+	top: 10px;
+	right: 70px;
+}
+
+.main-menu:target{
+	display: block;
+}
+
+.menu-items:target{
+	display: none;
+}
+
+/*==========================
+        FORMULAIRE
+===========================*/
+
+.form-container{
+	margin: 0 auto;
+	position: relative;
+	background-image: url(../images/bkg-form.jpg);
+	background-size: cover;
+	background-position: top center;
+	background-repeat: no-repeat;
+	height: 75vh;
+	width: 100%;
+}
+
+#formulaire{
+	max-width: 900px;
+	margin: 0 auto;
+	position: absolute;
+	top: 5%;
+	left: 1%;
+	right: 1%;
+	background-color: rgba(250, 250, 250, 0.5);
+	border-radius: 10px 10px;
+}
+
+.colonne{
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+input[type=text], textarea, input[type=phone], input[type=email]{
+
+	height: 30px;
+	border-radius: 4px 4px;
+	border: 1px solid lightgrey;
+	width: 100%;
+	margin-left: 5px;
+}
+
+.p-form{
+	margin: 15px;
+}
+
+#label{
+	font-weight: bold;
+	color: #669;
+	margin: 10px 5px;
+}
+
+.title{
+	font-weight: bold;
+	color: #669;
+	margin-left: 18px;
+	font-size: 1.5em;
+}
+
+/* 
+styliser les boutons: envoi/reset;
+ */
+ 
+#envoi-btn{
+	color: #fff;
+	border: none;
+	padding: 8px 50px;
+	border-radius: 50px 50px;
+	background-image: linear-gradient(#b9bbde,#669);
+}
+
+#reset-btn{
+	color: #fff;
+	border: none;
+	padding: 8px 57px;
+	border-radius: 50px 50px;
+	background-image: linear-gradient(#b9bbde,#669);
+}
+
+.p_form{
+	text-align: center;
+}
+
+#envoi-btn:hover, #reset-btn:hover{
+	background-image: linear-gradient(#666, #444);
+}
+
+/*=========================
+        FOOTER
+===========================*/
+
+footer{
+	font-family: 'Ubuntu';
+	margin: 0 auto;
+	background-color: #ff7fcf;
+	overflow: hidden;
+}
+
+/*
+positionner les liens
+*/
+
+.container-checkbox > .p-container {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.container-checkbox{
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+.p-container{
+	margin: -1px;
+}
+
+/*
+styliser les liens footer
+*/
+
+.lien-footer{
+	color: #ededed;
+	font-size: 15px;
+	margin-left: 25px;
+	text-decoration: none;
+}
+
+/*
+Création de la checkbox
+*/
+
+.container-ck input{
+	display: none;
+}
+
+.container-ck{
+	display: block;
+	margin: 2px;
+	position: relative;
+	background-color: rgb(120,120,120,0.2);
+}
+
+label:hover{
+	background-color: rgb(120,120,120,0.8);
+}
+
+.container-ck .checkmark{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	border: 1px solid lightgrey;
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.container-ck input:checked ~ .checkmark{
+	background-color: #ccc;
+}
+
+/*
+Indicateur de la checkbox
+*/
+
+.container-ck input:checked ~ .checkmark:after{
+	content: "X";
+	background-color: #ccc;
+	height: 20px;
+	width: 20px;
+	margin-left: 3px;
+	color: #000;	
+}
+
+/*fin de la feuille de styles css
